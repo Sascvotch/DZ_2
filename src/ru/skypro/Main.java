@@ -73,24 +73,30 @@ task8();
             int d = 15;
             int e = 9;
             int result = a * (b + (c - d * e));
-            result=result*-1;
+            result=-result;
         System.out.println("Результат "+result);
         }
     public static void task7() {
 
         int a = 5;
-        int b = 7;
-        a=b%a;
-        b=b-a;
+        int b = 14;
         a=a+b;
+        b=a-b;
+        a=a-b;
         System.out.println(a);
         System.out.println(b);
+     //   a=b%a;
+     //   b=b-a;
+     //   a=a+b;
+     //   System.out.println(a);
+      //  System.out.println(b);
     }
     public static void task8() {
 
         int a = 456;
         int b;
-        b=(a%100-(a%100)%10)/10;
+        b=a%100/10;
+        //b=(a%100-(a%100)%10)/10;
         System.out.println(b);
     }
 }
